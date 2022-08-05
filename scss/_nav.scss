@@ -6,12 +6,24 @@
 	position: relative;
 	background-color: $white;
 
+	@media screen and (min-width: 1024px) {
+		height: 7vh;
+	}
+
 	&__logo {
 		margin-left: 20px;
+
+		@media screen and (min-width: 1024px) {
+			margin-left: 120px;
+		}
 	}
 
 	&__mobile {
 		margin-right: 30px;
+
+		@media screen and (min-width: 1024px) {
+			display: none;
+		}
 	}
 
 	&__navigation {
@@ -31,6 +43,13 @@
 		width: 90%;
 		z-index: 1;
 
+		@media screen and (min-width: 1024px) {
+			background-color: transparent;
+			flex-direction: row;
+			position: static;
+			transform: translate(0);
+		}
+
 		&.active {
 			transform: translate(0);
 		}
@@ -39,10 +58,48 @@
 			color: $dark-blue;
 			margin-bottom: 20px;
 			text-decoration: none;
+
+			@media screen and (min-width: 1024px) {
+				color: $grayish-blue;
+				margin-right: 20px;
+				padding-bottom: 10px;
+				position: relative;
+
+				&:hover {
+					color: $dark-blue;
+				}
+
+				&:hover::before {
+					content: "";
+					background-image: linear-gradient(
+						to right,
+						$lime-green 0%,
+						$bright-cyan 100%
+					);
+					height: 5px;
+					left: 0;
+					position: absolute;
+					top: 4.5vh;
+					width: 100%;
+				}
+			}
 		}
 	}
 
 	&__request-invite {
 		display: none;
+
+		@media screen and (min-width: 1024px) {
+			background: linear-gradient(to right, $lime-green 0%, $bright-cyan 100%);
+			border: none;
+			border-radius: 20px;
+			color: $white;
+			cursor: pointer;
+			display: inline-block;
+			margin-bottom: 10px;
+			margin-right: 120px;
+			padding: 10px 0;
+			width: 180px;
+		}
 	}
 }
