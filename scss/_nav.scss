@@ -1,0 +1,48 @@
+.nav {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	height: 10vh;
+	position: relative;
+	background-color: $white;
+
+	&__logo {
+		margin-left: 20px;
+	}
+
+	&__mobile {
+		margin-right: 30px;
+	}
+
+	&__navigation {
+		align-items: center;
+		background-color: $white;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 5%;
+		left: 0;
+		padding-top: 20px;
+		position: absolute;
+		transform: translateY(-200%);
+		transition: 0.3s;
+		top: 13vh;
+		width: 90%;
+		z-index: 1;
+
+		&.active {
+			transform: translate(0);
+		}
+
+		& a {
+			color: $dark-blue;
+			margin-bottom: 20px;
+			text-decoration: none;
+		}
+	}
+
+	&__request-invite {
+		display: none;
+	}
+}
