@@ -298,6 +298,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .articles__heading {
+    font-size: 40px;
     margin-left: 83px;
     text-align: left;
   }
