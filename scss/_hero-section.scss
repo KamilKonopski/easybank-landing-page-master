@@ -1,0 +1,31 @@
+.hero {
+	background-color: $very-light-gray;
+	&__image {
+		& img:last-child {
+			@media screen and (min-width: 1024px) {
+				transform: translate(42%, -120%);
+				width: 80%;
+			}
+		}
+		& img:nth-child(2) {
+			display: none;
+
+			@media screen and (min-width: 1024px) {
+				display: block;
+				transform: translate(1%, -25%);
+				width: 128%;
+			}
+		}
+
+		& img:first-child {
+			@media screen and (min-width: 1024px) {
+				display: none;
+			}
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		flex-direction: row-reverse;
+		height: 55vh;
+	}
+}
