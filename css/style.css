@@ -311,6 +311,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .articles__article {
+    align-items: flex-start;
     flex-direction: row;
     margin: 40px 60px;
   }
