@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -18,20 +17,17 @@ body {
 }
 
 .nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   height: 10vh;
   position: relative;
   background-color: hsl(0deg, 0%, 100%);
   z-index: 3;
 }
+
 @media screen and (min-width: 1024px) {
   .nav {
     padding-top: 10px;
@@ -39,71 +35,64 @@ body {
     height: 7vh;
   }
 }
+
 .nav__logo {
   margin-left: 20px;
 }
+
 @media screen and (min-width: 1024px) {
   .nav__logo {
     margin-left: 120px;
   }
 }
+
 .nav__mobile {
   margin-right: 30px;
 }
+
 @media screen and (min-width: 1024px) {
   .nav__mobile {
     display: none;
   }
 }
+
 .nav__navigation {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 5%;
   left: 0;
   padding-top: 20px;
   position: absolute;
-  -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
-  -webkit-transition: 0.3s;
+  transform: translateY(-200%);
   transition: 0.3s;
   top: 13vh;
   width: 90%;
   z-index: 1;
 }
+
 @media screen and (min-width: 1024px) {
   .nav__navigation {
     background-color: transparent;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     position: static;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
+
 .nav__navigation.active {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
 }
+
 .nav__navigation a {
   color: hsl(233deg, 26%, 24%);
   margin-bottom: 20px;
   text-decoration: none;
 }
+
 @media screen and (min-width: 1024px) {
   .nav__navigation a {
     color: hsl(233deg, 8%, 62%);
@@ -112,12 +101,13 @@ body {
     padding-bottom: 10px;
     position: relative;
   }
+
   .nav__navigation a:hover {
     color: hsl(233deg, 26%, 24%);
   }
+
   .nav__navigation a:hover::before {
     content: "";
-    background-image: -webkit-gradient(linear, left top, right top, from(hsl(136deg, 65%, 51%)), to(hsl(192deg, 70%, 51%)));
     background-image: linear-gradient(to right, hsl(136deg, 65%, 51%) 0%, hsl(192deg, 70%, 51%) 100%);
     height: 5px;
     left: 0;
@@ -126,12 +116,13 @@ body {
     width: 100%;
   }
 }
+
 .nav__request-invite {
   display: none;
 }
+
 @media screen and (min-width: 1024px) {
   .nav__request-invite {
-    background: -webkit-gradient(linear, left top, right top, from(hsl(136deg, 65%, 51%)), to(hsl(192deg, 70%, 51%)));
     background: linear-gradient(to right, hsl(136deg, 65%, 51%) 0%, hsl(192deg, 70%, 51%) 100%);
     border: none;
     border-radius: 20px;
@@ -149,77 +140,73 @@ body {
   background-color: hsl(0deg, 0%, 98%);
   margin-bottom: 180px;
 }
+
 @media screen and (min-width: 1024px) {
   .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     height: 55vh;
   }
 }
+
 .hero__image {
   height: 50vh;
 }
+
 .hero__image img:last-child {
-  -webkit-transform: translate(0%, -122%);
-          transform: translate(0%, -122%);
+  transform: translate(0%, -122%);
   width: 100%;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__image img:last-child {
-    -webkit-transform: translate(42%, -120%);
-            transform: translate(42%, -120%);
+    transform: translate(42%, -120%);
     width: 80%;
   }
 }
+
 .hero__image img:nth-child(2) {
   display: none;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__image img:nth-child(2) {
     display: block;
-    -webkit-transform: translate(1%, -25%);
-            transform: translate(1%, -25%);
+    transform: translate(1%, -25%);
     width: 128%;
   }
 }
+
 .hero__image img:first-child {
-  -webkit-transform: translate(0%, -8%);
-          transform: translate(0%, -8%);
+  transform: translate(0%, -8%);
 }
+
 @media screen and (min-width: 1024px) {
   .hero__image img:first-child {
     display: none;
   }
 }
+
 .hero__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 80px;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__info {
     margin-top: 55px;
   }
 }
+
 .hero__info h1 {
   color: hsl(233deg, 26%, 24%);
   margin-bottom: 20px;
   font-weight: 400;
   text-align: center;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__info h1 {
     font-size: 42px;
@@ -227,19 +214,21 @@ body {
     text-align: left;
   }
 }
+
 .hero__info p {
   color: hsl(233deg, 8%, 62%);
   font-size: 16px;
   line-height: 150%;
   padding: 0 15px;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__info p {
     margin: 0 15px 0 280px;
   }
 }
+
 .hero__info button {
-  background: -webkit-gradient(linear, left top, right top, from(hsl(136deg, 65%, 51%)), to(hsl(192deg, 70%, 51%)));
   background: linear-gradient(to right, hsl(136deg, 65%, 51%) 0%, hsl(192deg, 70%, 51%) 100%);
   border: none;
   border-radius: 20px;
@@ -248,9 +237,12 @@ body {
   margin: 20px 100px;
   padding: 15px 40px;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__info button {
     margin: 30px 270px 0 295px;
     padding: 12px 24px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
