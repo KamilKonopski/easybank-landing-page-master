@@ -147,6 +147,27 @@ body {
 
 .hero {
   background-color: hsl(0deg, 0%, 98%);
+  margin-bottom: 180px;
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    height: 55vh;
+  }
+}
+.hero__image {
+  height: 50vh;
+}
+.hero__image img:last-child {
+  -webkit-transform: translate(0%, -122%);
+          transform: translate(0%, -122%);
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .hero__image img:last-child {
@@ -166,20 +187,70 @@ body {
     width: 128%;
   }
 }
+.hero__image img:first-child {
+  -webkit-transform: translate(0%, -8%);
+          transform: translate(0%, -8%);
+}
 @media screen and (min-width: 1024px) {
   .hero__image img:first-child {
     display: none;
   }
 }
+.hero__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+}
 @media screen and (min-width: 1024px) {
-  .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    height: 55vh;
+  .hero__info {
+    margin-top: 55px;
+  }
+}
+.hero__info h1 {
+  color: hsl(233deg, 26%, 24%);
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .hero__info h1 {
+    font-size: 42px;
+    margin: 0 100px 20px 300px;
+    text-align: left;
+  }
+}
+.hero__info p {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 16px;
+  line-height: 150%;
+  padding: 0 15px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__info p {
+    margin: 0 15px 0 280px;
+  }
+}
+.hero__info button {
+  background: -webkit-gradient(linear, left top, right top, from(hsl(136deg, 65%, 51%)), to(hsl(192deg, 70%, 51%)));
+  background: linear-gradient(to right, hsl(136deg, 65%, 51%) 0%, hsl(192deg, 70%, 51%) 100%);
+  border: none;
+  border-radius: 20px;
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  margin: 20px 100px;
+  padding: 15px 40px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__info button {
+    margin: 30px 270px 0 295px;
+    padding: 12px 24px;
   }
 }/*# sourceMappingURL=style.css.map */

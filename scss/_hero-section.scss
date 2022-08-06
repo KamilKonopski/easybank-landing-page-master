@@ -1,12 +1,25 @@
 .hero {
 	background-color: $very-light-gray;
+	margin-bottom: 180px;
+
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		flex-direction: row-reverse;
+		height: 55vh;
+	}
+
 	&__image {
+		height: 50vh;
+
 		& img:last-child {
+			transform: translate(0%, -122%);
+			width: 100%;
 			@media screen and (min-width: 1024px) {
 				transform: translate(42%, -120%);
 				width: 80%;
 			}
 		}
+
 		& img:nth-child(2) {
 			display: none;
 
@@ -18,14 +31,60 @@
 		}
 
 		& img:first-child {
+			transform: translate(0%, -8%);
 			@media screen and (min-width: 1024px) {
 				display: none;
 			}
 		}
 	}
-	@media screen and (min-width: 1024px) {
+
+	&__info {
 		display: flex;
-		flex-direction: row-reverse;
-		height: 55vh;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 80px;
+
+		@media screen and (min-width: 1024px) {
+			margin-top: 55px;
+		}
+
+		& h1 {
+			color: $dark-blue;
+			margin-bottom: 20px;
+			font-weight: 400;
+			text-align: center;
+
+			@media screen and (min-width: 1024px) {
+				font-size: 42px;
+				margin: 0 100px 20px 300px;
+				text-align: left;
+			}
+		}
+
+		& p {
+			color: $grayish-blue;
+			font-size: 16px;
+			line-height: 150%;
+			padding: 0 15px;
+
+			@media screen and (min-width: 1024px) {
+				margin: 0 15px 0 280px;
+			}
+		}
+
+		& button {
+			background: linear-gradient(to right, $lime-green 0%, $bright-cyan 100%);
+			border: none;
+			border-radius: 20px;
+			color: $white;
+			cursor: pointer;
+			margin: 20px 100px;
+			padding: 15px 40px;
+
+			@media screen and (min-width: 1024px) {
+				margin: 30px 270px 0 295px;
+				padding: 12px 24px;
+			}
+		}
 	}
 }
