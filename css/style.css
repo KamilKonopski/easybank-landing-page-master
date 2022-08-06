@@ -34,7 +34,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .nav {
-    margin: 10px;
+    padding-top: 10px;
     width: 100%;
     height: 7vh;
   }
