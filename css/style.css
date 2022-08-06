@@ -222,6 +222,7 @@ body {
 .functions {
   background-color: hsl(220deg, 16%, 96%);
   padding-top: 80px;
+  padding-bottom: 40px;
 }
 .functions__text {
   padding: 0 10px 80px;
@@ -234,13 +235,29 @@ body {
   margin-bottom: 25px;
 }
 .functions__text p {
-  color: hsl(233deg, 26%, 24%);
+  color: hsl(233deg, 8%, 62%);
   font-size: 16px;
   line-height: 150%;
 }
-.functions__function-simple {
+.functions__function {
   align-items: center;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+.functions__function-simple {
+  margin-bottom: 35px;
+}
+.functions__function-simple h3 {
+  color: hsl(233deg, 26%, 24%);
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.functions__function-simple p {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 16px;
+  margin: 0 5px;
+  line-height: 150%;
 }/*# sourceMappingURL=style.css.map */
