@@ -1,0 +1,31 @@
+.functions {
+	background-color: $light-grayish-blue;
+	padding-top: 80px;
+
+	&__text {
+		padding: 0 10px 80px;
+		text-align: center;
+
+		& h2 {
+			color: $dark-blue;
+			font-size: 36px;
+			font-weight: 400;
+			margin-bottom: 25px;
+		}
+
+		& p {
+			color: $dark-blue;
+			font-size: 16px;
+			line-height: 150%;
+		}
+	}
+
+	&__function {
+		&-simple {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+}
