@@ -25,6 +25,7 @@ body {
   background-color: hsl(0deg, 0%, 100%);
   z-index: 3;
 }
+
 @media screen and (min-width: 1024px) {
   .nav {
     padding-top: 10px;
@@ -32,22 +33,27 @@ body {
     height: 7vh;
   }
 }
+
 .nav__logo {
   margin-left: 20px;
 }
+
 @media screen and (min-width: 1024px) {
   .nav__logo {
     margin-left: 120px;
   }
 }
+
 .nav__mobile {
   margin-right: 30px;
 }
+
 @media screen and (min-width: 1024px) {
   .nav__mobile {
     display: none;
   }
 }
+
 .nav__navigation {
   align-items: center;
   background-color: hsl(0deg, 0%, 100%);
@@ -59,31 +65,32 @@ body {
   left: 0;
   padding-top: 20px;
   position: absolute;
-  -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
+  transform: translateY(-200%);
   transition: 0.3s;
   top: 13vh;
   width: 90%;
   z-index: 1;
 }
+
 @media screen and (min-width: 1024px) {
   .nav__navigation {
     background-color: transparent;
     flex-direction: row;
     position: static;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
+
 .nav__navigation.active {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
 }
+
 .nav__navigation a {
   color: hsl(233deg, 26%, 24%);
   margin-bottom: 20px;
   text-decoration: none;
 }
+
 @media screen and (min-width: 1024px) {
   .nav__navigation a {
     color: hsl(233deg, 8%, 62%);
@@ -92,9 +99,11 @@ body {
     padding-bottom: 10px;
     position: relative;
   }
+
   .nav__navigation a:hover {
     color: hsl(233deg, 26%, 24%);
   }
+
   .nav__navigation a:hover::before {
     content: "";
     background-image: linear-gradient(to right, hsl(136deg, 65%, 51%) 0%, hsl(192deg, 70%, 51%) 100%);
@@ -105,9 +114,11 @@ body {
     width: 100%;
   }
 }
+
 .nav__request-invite {
   display: none;
 }
+
 @media screen and (min-width: 1024px) {
   .nav__request-invite {
     background: linear-gradient(to right, hsl(136deg, 65%, 51%) 0%, hsl(192deg, 70%, 51%) 100%);
@@ -126,6 +137,7 @@ body {
 .hero {
   background-color: hsl(0deg, 0%, 98%);
 }
+
 @media screen and (min-width: 1024px) {
   .hero {
     display: flex;
@@ -133,58 +145,65 @@ body {
     height: 55vh;
   }
 }
+
 .hero__image {
   height: 50vh;
 }
+
 .hero__image img:last-child {
-  -webkit-transform: translate(0%, -122%);
-          transform: translate(0%, -122%);
+  transform: translate(0%, -122%);
   width: 100%;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__image img:last-child {
-    -webkit-transform: translate(42%, -120%);
-            transform: translate(42%, -120%);
+    transform: translate(42%, -120%);
     width: 80%;
   }
 }
+
 .hero__image img:nth-child(2) {
   display: none;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__image img:nth-child(2) {
     display: block;
-    -webkit-transform: translate(1%, -25%);
-            transform: translate(1%, -25%);
+    transform: translate(1%, -25%);
     width: 128%;
   }
 }
+
 .hero__image img:first-child {
-  -webkit-transform: translate(0%, -8%);
-          transform: translate(0%, -8%);
+  transform: translate(0%, -8%);
 }
+
 @media screen and (min-width: 1024px) {
   .hero__image img:first-child {
     display: none;
   }
 }
+
 .hero__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 80px;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__info {
     margin-top: 55px;
   }
 }
+
 .hero__info h1 {
   color: hsl(233deg, 26%, 24%);
   margin-bottom: 20px;
   font-weight: 400;
   text-align: center;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__info h1 {
     font-size: 42px;
@@ -192,17 +211,20 @@ body {
     text-align: left;
   }
 }
+
 .hero__info p {
   color: hsl(233deg, 8%, 62%);
   font-size: 16px;
   line-height: 150%;
   padding: 0 15px;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__info p {
     margin: 0 15px 0 280px;
   }
 }
+
 .hero__info button {
   background: linear-gradient(to right, hsl(136deg, 65%, 51%) 0%, hsl(192deg, 70%, 51%) 100%);
   border: none;
@@ -212,6 +234,7 @@ body {
   margin: 20px 100px;
   padding: 15px 40px;
 }
+
 @media screen and (min-width: 1024px) {
   .hero__info button {
     margin: 30px 270px 0 295px;
@@ -224,43 +247,51 @@ body {
   padding-top: 80px;
   padding-bottom: 40px;
 }
+
 @media screen and (min-width: 1024px) {
   .functions {
     padding-bottom: 60px;
   }
 }
+
 .functions__text {
   padding: 0 10px 80px;
   text-align: center;
 }
+
 @media screen and (min-width: 1024px) {
   .functions__text {
     padding: 0px 520px 80px 295px;
     text-align: left;
   }
 }
+
 .functions__text h2 {
   color: hsl(233deg, 26%, 24%);
   font-size: 36px;
   font-weight: 400;
   margin-bottom: 25px;
 }
+
 @media screen and (min-width: 1024px) {
   .functions__text h2 {
     font-size: 30px;
   }
 }
+
 .functions__text p {
   color: hsl(233deg, 8%, 62%);
   font-size: 16px;
   line-height: 150%;
 }
+
 .functions__function {
   align-items: center;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+
 @media screen and (min-width: 1024px) {
   .functions__function {
     flex-direction: row;
@@ -268,9 +299,11 @@ body {
     margin: 0 80px;
   }
 }
+
 .functions__function-simple {
   margin-bottom: 35px;
 }
+
 .functions__function-simple h3 {
   color: hsl(233deg, 26%, 24%);
   font-size: 24px;
@@ -278,16 +311,20 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .functions__function-simple p {
   color: hsl(233deg, 8%, 62%);
   font-size: 16px;
   margin: 0 5px;
   line-height: 150%;
 }
+
 @media screen and (min-width: 1024px) {
   .functions__function-simple p {
     font-size: 14px;
     margin: 0;
     margin-right: 83px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
