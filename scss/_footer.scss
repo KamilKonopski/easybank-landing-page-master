@@ -22,6 +22,12 @@
 		& img {
 			width: 6%;
 			margin: 0 7px 25px;
+
+			&:hover {
+				cursor: pointer;
+				filter: invert(61%) sepia(96%) saturate(383%) hue-rotate(81deg)
+					brightness(93%) contrast(89%);
+			}
 		}
 	}
 
