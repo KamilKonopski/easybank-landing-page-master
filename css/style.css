@@ -16,6 +16,10 @@ body {
   overflow: hidden;
 }
 
+.attribution {
+  text-align: center;
+}
+
 .nav {
   align-items: center;
   display: flex;
@@ -382,10 +386,14 @@ body {
     flex-direction: row;
   }
 }
+.footer div {
+  width: 100%;
+}
 .footer__logo {
   background-color: hsl(233deg, 26%, 24%);
   color: hsl(0deg, 0%, 100%);
   margin-bottom: 25px;
+  text-align: center;
 }
 .footer__socials {
   text-align: center;
@@ -394,6 +402,12 @@ body {
 .footer__socials img {
   width: 6%;
   margin: 0 7px 25px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__socials img {
+    margin-top: 30px;
+    width: 4%;
+  }
 }
 .footer__socials img:hover {
   cursor: pointer;
@@ -405,10 +419,24 @@ body {
   flex-direction: column;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1024px) {
+  .footer__links {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 12vh;
+    justify-content: center;
+    padding-right: 100px;
+  }
+}
 .footer__links a {
   color: hsl(0deg, 0%, 100%);
   text-decoration: none;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__links a {
+    font-size: 15px;
+  }
 }
 .footer__links a:hover {
   color: hsl(136deg, 65%, 51%);
@@ -423,6 +451,11 @@ body {
   margin: 20px 100px;
   padding: 15px 40px;
 }
+@media screen and (min-width: 1024px) {
+  .footer__button {
+    margin-left: 190px;
+  }
+}
 .footer__button:hover {
   background: linear-gradient(to right, hsl(136deg, 96%, 55%) 0%, hsl(192deg, 86%, 51%) 100%);
   color: hsl(0deg, 0%, 100%);
@@ -430,4 +463,5 @@ body {
 .footer__rights {
   color: hsl(233deg, 8%, 62%);
   padding-bottom: 60px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
