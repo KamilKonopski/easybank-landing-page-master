@@ -368,4 +368,62 @@ body {
   font-size: 14px;
   font-weight: 500;
   margin: 10px 15px 60px 30px;
+}
+
+.footer {
+  align-items: center;
+  background-color: hsl(233deg, 26%, 24%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+  }
+}
+.footer__logo {
+  background-color: hsl(233deg, 26%, 24%);
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 25px;
+}
+.footer__socials {
+  text-align: center;
+  width: 100%;
+}
+.footer__socials img {
+  width: 6%;
+  margin: 0 7px 25px;
+}
+.footer__links {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.footer__links a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.footer__links a:hover {
+  color: hsl(136deg, 65%, 51%);
+  cursor: pointer;
+}
+.footer__button {
+  background: linear-gradient(to right, hsl(136deg, 65%, 51%) 0%, hsl(192deg, 70%, 51%) 100%);
+  border: none;
+  border-radius: 20px;
+  color: hsl(220deg, 16%, 96%);
+  cursor: pointer;
+  margin: 20px 100px;
+  padding: 15px 40px;
+}
+.footer__button:hover {
+  background: linear-gradient(to right, hsl(136deg, 96%, 55%) 0%, hsl(192deg, 86%, 51%) 100%);
+  color: hsl(0deg, 0%, 100%);
+}
+.footer__rights {
+  color: hsl(233deg, 8%, 62%);
+  padding-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */

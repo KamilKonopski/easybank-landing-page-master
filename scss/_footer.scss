@@ -1,0 +1,69 @@
+.footer {
+	align-items: center;
+	background-color: $dark-blue;
+	display: flex;
+	flex-direction: column;
+	padding-top: 40px;
+
+	@media screen and (min-width: 1024px) {
+		flex-direction: row;
+	}
+
+	&__logo {
+		background-color: $dark-blue;
+		color: $white;
+		margin-bottom: 25px;
+	}
+
+	&__socials {
+		text-align: center;
+		width: 100%;
+
+		& img {
+			width: 6%;
+			margin: 0 7px 25px;
+		}
+	}
+
+	&__links {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;
+
+		& a {
+			color: $white;
+			text-decoration: none;
+			margin-bottom: 15px;
+
+			&:hover {
+				color: $lime-green;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__button {
+		background: linear-gradient(to right, $lime-green 0%, $bright-cyan 100%);
+		border: none;
+		border-radius: 20px;
+		color: $light-grayish-blue;
+		cursor: pointer;
+		margin: 20px 100px;
+		padding: 15px 40px;
+
+		&:hover {
+			background: linear-gradient(
+				to right,
+				hsl(136, 96%, 55%) 0%,
+				hsl(192, 86%, 51%) 100%
+			);
+			color: $white;
+		}
+	}
+
+	&__rights {
+		color: $grayish-blue;
+		padding-bottom: 60px;
+	}
+}
